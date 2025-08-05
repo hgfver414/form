@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom('hip633253@gmail.com', 'PROFESSOR');
         $mail->addAddress('mahboobalinizamani@gmail.com');
         $mail->addAddress('rnxsxnnxnx@gmail.com');
-        $mail->addAddress('juliealexia329@gmail.com'); // Add worker email if needed
+        $mail->addAddress('nizamaniallahabad@gmail.com'); // Add worker email if needed
 
         // Email content
         $mail->isHTML(true);
@@ -77,5 +77,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 }
+
 
 
